@@ -68,6 +68,7 @@ function MyBlogs() {
             <tr>
               <th>Id</th>
               <th>Title</th>
+              <th>Contents</th>
               <th>Category</th>
               <th>Date</th>
               {/* <th>Author</th> */}
@@ -75,11 +76,13 @@ function MyBlogs() {
             </tr>
           </thead>
           <tbody>
-            {blogs.map((blog) => {
+            {blogs.map((blog,index) => {
               return (
                 <tr key={blog.id}>
-                  <td>{blog.blogID}</td>
+                  {/* <td>{blog.blogID}</td> */}
+                  <td>{index + 1}</td>
                   <td>{blog.b_title}</td>
+                  <td>{blog.contents }</td>
                   <td>{blog.c_title}</td>
                   <td>{blog.created_time}</td>
                   {/* <td>{blog.}</td> */}
@@ -88,7 +91,7 @@ function MyBlogs() {
                       onClick={() => {
                         onEditBlog(blog.blogID);
                       }}
-                      className="btn btn-success mybtn"
+                      className="btn btn-success"
                     >
                       Edit
                     </button>
@@ -96,7 +99,7 @@ function MyBlogs() {
                       onClick={() => {
                         onDeleteBlog(blog.blogID);
                       }}
-                      className="btn btn-danger mybtn"
+                      className="btn btn-danger"
                     >
                       Delete
                     </button>

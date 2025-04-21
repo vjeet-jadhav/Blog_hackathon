@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <div>
       <div className="tabs">
-        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul className="navbar-nav mynav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
             <Link to="/home/newblog">New Blogs</Link>
           </li>
@@ -19,13 +19,13 @@ function Navbar() {
             <Link to="/home/allblogs">Find Blogs</Link>
           </li>
           <li className="nav-item">
-            <Link to="/home/addcategory">Add category</Link>
+            <Link to="/home/addcategory">Add Category</Link>
           </li>
           <li className="nav-item">
-            <Link to="/home/showcategory">Show category</Link>
+            <Link to="/home/showcategory">Show Category</Link>
           </li>
           <li className="nav-item">
-            <Link to="/home/signout">SignOut</Link>
+            <Link to="/home/signout">Sign Out</Link>
           </li>
         </ul>
       </div>

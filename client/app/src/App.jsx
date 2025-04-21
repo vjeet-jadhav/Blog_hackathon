@@ -16,7 +16,7 @@ import DisplayCategory from "./pages/DisplayCategory";
 
 function App() {
   return (
-    <div className="container">
+    <div className="">
       <Routes>
         <Route path="/" element={<Login></Login>}></Route>
         <Route path="register" element={<Register></Register>}></Route>

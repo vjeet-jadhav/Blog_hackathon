@@ -42,10 +42,11 @@ function AllBlogs() {
       )}
       {blogs.length > 0 && (
         <table className="table w-100 table-stripped">
-          <thead>
+          <thead className="thead">
             <tr>
               <th>Id</th>
               <th>Title</th>
+              <th>Contents</th>
               <th>Category</th>
               <th>Date</th>
               {/* <th>Author</th> */}
@@ -53,11 +54,13 @@ function AllBlogs() {
             </tr>
           </thead>
           <tbody>
-            {blogs.map((blog) => {
+            {blogs.map((blog,index) => {
               return (
                 <tr key={blog.id}>
-                  <td>{blog.blogID}</td>
+                  {/* <td>{blog.blogID}</td> */}
+                  <td>{index + 1}</td>
                   <td>{blog.b_title}</td>
+                  <td>{blog.contents }</td>
                   <td>{blog.c_title}</td>
                   <td>{blog.created_time}</td>
                   <td>

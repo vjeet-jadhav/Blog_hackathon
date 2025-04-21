@@ -1,26 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: blueviolet;
+  background: linear-gradient(to bottom , rgb(251, 127, 49) , #fefae0);
+  height: 100vh;
+  background-repeat: no-repeat;
 }
 
 .main{
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  /* align-items: center; */
   padding: 20px;
 }
 
 .left-div{
-  position: absolute;
-  left: 0px;
-  top: 15%;
+  /* position: absolute; */
+  /* left: 15px; */
+  /* top: 15%; */
   height: 80%;
-  width: 18%;
+  /* width: 17%; */
   padding: 30px;
   text-align: left;
   font-size: 20px;
   background-color: black;
-  color: white;
+  background-color: rgb(251, 127, 49);
+  background: rgba(255, 255, 255, 0.1); /* translucent */
+
 }
+
+a{
+  color: white;
+  background-color: rgb(251, 127, 49);
+  border-radius: 4px ;
+  padding: 10px;
+}
+/* 
+a :hover{
+color: rgb(251, 127, 49);
+background-color: white;
+} */
 
 li{
   margin: 8px;
@@ -29,6 +53,7 @@ li{
 .right-div{
   text-align: center;
   width: 80%;
+  /* border: 2px solid rgb(255, 153, 0); */
 }
 
 .page-header{
@@ -37,9 +62,10 @@ li{
 
 .page-head{
   margin: 20px;
+  padding: 10px 0;
   text-align: center;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  /* margin-bottom: 40px; */
+  background-color: #fefae0;
 }
 
 .btn{
@@ -48,7 +74,7 @@ li{
   background-color: black;
   color: white;
   box-shadow: 5px 5px 5px gray;
-  width: 40%;
+  margin: 4px 5px 0 5px;
 }
 
 .mytable{

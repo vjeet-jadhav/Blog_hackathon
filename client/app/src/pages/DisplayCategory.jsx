@@ -7,7 +7,7 @@ function DisplayCategory() {
   const [categoryList, setCategoryList] = useState([]);
 
   // get all tasks created by the user
-  console.log(categoryList)
+  // console.log(categoryList)
   const getUserCategories = async () => {
     const result = await getCategories();
     if (result["status"] == "success") {
